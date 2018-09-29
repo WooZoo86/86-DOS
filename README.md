@@ -1,7 +1,7 @@
 # 86-DOS
-### 86-DOS for OpenComputers with the core of OpenOS
+### 86-DOS for OpenComputers (with the core of OpenOS)
 ---
-To install, download and launch _"setup.lua"_:
+To install, download and launch _"setup.lua"_ (don't forget about an Internet Card):
 
 > cd /tmp
 
