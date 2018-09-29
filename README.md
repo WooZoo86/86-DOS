@@ -3,6 +3,8 @@
 ---
 To install, download and launch _"setup.lua"_:
 
+> cd /tmp
+
 > wget https://raw.githubusercontent.com/DarikXPlay/86-DOS/master/setup.lua
 
 > setup
