@@ -177,8 +177,11 @@ if not component.isAvailable("internet") then
 end
 local devices = {}
 for dev, path in fs.mounts() do
-    table.insert(devices, dev)
-    devices[#devices].path = path
+    if path ~= "/tmp" and path ~= "/dev" and path ~= "/" and not (dev.getLabel() ~= nil
+            and dev.getLabel():lower() == "openos") then
+        table.insert(devices, dev)
+        devices[#devices].path = path
+    end
 end
 local target = select_prompt(devices)
 if prompt("Install 86-DOS on " .. (target.getLabel() or target.address)) then
